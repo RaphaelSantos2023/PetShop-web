@@ -1,0 +1,80 @@
+.cabesalho{
+    background-color: #CC313D;
+    color: white;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0%;
+}
+
+body{
+    background-color: pink;
+}
+
+h3{
+    font-size: 50px;
+    display: flex;
+}
+p{
+    font-size: 25px;
+}
+
+.DivProduto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Linha{
+    /*Codigo pra deixar tudo numa mesma linha, incluindo imagem*/
+    display: flex;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.Linkes{
+    color: white;
+    /*tira os enfeites do hover*/
+    text-decoration: none;
+    padding: 30px;
+    margin:5px;
+    width:250px;
+    height:150;
+}
+.Linkes:hover{
+    background-color: pink;
+}
+
+
+.Slide{
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 40px;
+}
+
+.SlideImg{
+    
+    width: 100%;
+    height: auto;
+}
+
+.Articles{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    padding: 20PX;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+}
+
