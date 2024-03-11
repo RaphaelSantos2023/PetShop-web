@@ -1,52 +1,86 @@
 .cabesalho{
-    background-color: #CC313D;
-    color: white;
-    text-align: center; 
-    justify-content: center;
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
     padding: 5px;
-    margin: 0%;
+}
+@media screen and (max-width: 768px) {
+    .cabesalho,.Espasamento,.Linha{
+        width: 80%;
+        height: auto;
+    }
+}
+
+article{
+    background-color: white;
 }
 
 body{
     background-color: pink;
+}
+.ImgEstrutura,.Espasamento{
+    max-width: 100%;
+    height: auto;
+}
+
+.branco{
+    color:white;
+}
+
+.Espasamento{
+    margin-right: 250px;
+}
+a{
+    text-decoration: none;
+    color:black;
 }
 
 h3{
     font-size: 50px;
     display: flex;
 }
-p{
-    font-size: 25px;
+
+h4{
+    font-size: 30px;
+    display: flex;
 }
 
-.DivProduto{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+p{
+    font-size: 20px;
 }
+
+label{
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
 .Linha{
-    /*Codigo pra deixar tudo numa mesma linha, incluindo imagem*/
     display: flex;
+    flex-direction: row;
     height: 200px;
     width: 200px;
-    align-items: center;
-    padding: 10px;
+    color:white;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 .Linkes{
-    color: white;
-    /*tira os enfeites do hover*/
     text-decoration: none;
     padding: 30px;
     margin:5px;
-    width:250px;
-    height:150;
+    width:150px;
+    color:white;
+    height:25px;
 }
+
 .Linkes:hover{
-    background-color: pink;
+    background-color:pink;
 }
 
 
@@ -56,25 +90,59 @@ p{
     margin-left: 250px;
     margin-right: 250px;
     padding: 20px;
-    margin-top: 20px;
-    background-color: white;
+    background-color: pink;
     font-size: 40px;
 }
 
+.Feedback,.Noticias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elementoF{
+    flex: 1;
+    width: 50.00%;
+    box-sizing: border-box;
+    padding:20px;
+    text-align: center;
+}
+.elementoN{
+    flex:1;
+    margin:5px;
+    width:25.00%;
+    box-sizing: border-box;
+    padding: 9px;
+    text-align: center;
+    border: 1px solid black;
+}
+
 .SlideImg{
-    
     width: 100%;
     height: auto;
 }
 
 .Articles{
-    margin-left: 250px;
+    margin-left: 70px;
     margin-right: 250px;
     margin-top: 20px;
     padding: 20PX;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: white;
 }
 
+.container,.cabesalho{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elemento {
+    flex: 1;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+}

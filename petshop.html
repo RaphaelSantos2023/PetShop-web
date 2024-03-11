@@ -4,115 +4,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="petshop.css">
-    <title>Document</title>
+    <title>PetShop</title>
 </head>
 <body>
-    <header class="cabesalho">
-        <nav class="Linha">
+    <header>
+        <div class="cabesalho">
 
-            <a href ="#"><img src = "PetshopLogo.png" alt = "Logo" width="250px" height="150"></a>
-            <a href= "#" class="Linkes">Home</a>
-            <a href = "#" class="Linkes">Sobre</a>
-            <a href = "#" class="Linkes">Serviços</a>
-            <a href = "#" class="Linkes">Produtos</a>
-            <a href = "#" class="Linkes">Contato</a>
+            <div class="Linha">
+                <div class="Espasamento">
+                    <a href="#"><img src = "PetshopLogo.png" alt = "Logo" ></a>
+                </div>
+                
+                <a href= "#" class="Linkes">Home</a>
+                <a href = "#" class="Linkes">Sobre</a>
+                <a href = "#" class="Linkes">Serviços</a>
+                <a href = "#" class="Linkes">Produtos</a>
+                <a href = "#" class="Linkes">Contato</a>
 
-        <div class="Linha">
-            <h3>Telefone: </h3>
-            <h3>Endereço:</h3>
+            </div>
+            <div class="branco">
+                <p>(00) 0 000-0000<br>Rua Josue,Bairro Monte Cristo</p>
+            </div>
         </div>
-        </nav>
-        
     </header>
+
     <br>
     <br>
-    <img src="Slide do petshop.png" width="450" height="350px" class="SlideImg">
-    <section class="Slide">
-        <p>Saudações! venha tratar seu querido pet com nossos serviços e atendimentos veterinarios<br> além de comprar os melhores brinquedos<br> e rações para seu familiar de quatro patas</p>
+
+    <section >
+        <img src="Slide do petshop.png" width="450" height="350px" class="SlideImg">
+        <p class="Slide">Saudações! venha tratar seu querido pet com nossos serviços e atendimentos veterinarios<br> além de comprar os melhores brinquedos<br> e rações para seu familiar de quatro patas</p>
     </section>
 
-    <article class="Articles">
-        <h3>Quem Somos?</h3>
+    <article id="Quem somos?" class="Articles">
+        <ul>
+            <h3>Quem Somos?</h3>
+        </ul>
+
             <p><br>
                 <strong>2005:</strong>
                 Fundação.
                 <br>
-                <br>
                 <strong>2008:</strong>
                 Expansão do Serviço.
-                <br>
                 <br>
                 <strong>2012:</strong>
                 Certificação Veterinária.
                 <br>
-                <br>
                 <strong>2015:</strong>
                 Programas de Bem-Estar Animal.
-                <br>
                 <br>
                 <strong>2018:</strong>
                 Loja Online.
                 <br>
-                <br>
                 <strong>2020:</strong>
                 Expansão da Frota de Atendimento Domiciliar.
                 <br>
-                <br>
                 <strong>2023:</strong>
                 Parceria com ONGs Locais.
-                <br>
                 <br>
                 <strong>2024:</strong>
                 Ampliação das Instalações.</p>
     </article>
 
-    <article class="Articles">
+    <article id = "Produtos" class="Articles">
         <h3>Produtos</h3>
+        
+        <div class="container">
 
-                <div class="DivProduto">
-                    <div>
-                        <strong><label>Ração</label></li></strong>
-                        <img src="OIP.jpg" alt="Ração">
-                        <label>R$ 50,00</label>
-                        <button>Comprar</button>
-                    </div>
-                    <div>
-                        <strong><label>Pente</label></li></strong>
-                        <img src="produto2.jpg" alt="Pente">
-                        <label>R$ 34,00</label>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="DivProduto">
-
-                        <strong><label>Shampoo</label></li></strong>
-                        <img src="produto3.jpg" alt="Shampoo" width="200px" height="150px">
-                        <label>R$ 85,00</label>
-                        <button>Comprar</button>
-
-                        <strong><label>Coleira</label></li></strong>
-                        <img src="produto4.jpg" alt="coleira" width="200px" height="150px">
-                        <label>R$ 45,00</label>
-                        <button>Comprar</button>
-
-                </div>
-                
+            <div class="elemento">
+            <ul>
+                <li>
+                    <strong><label>Ração</label></li></strong>
+                </li>
+                <li>
+                    <img id= "ImgEstrutura" src="OIP.jpg" alt="Ração" width="200px" height="150px">
+                </li>
+                <li>
+                    <label>R$ 50,00</label>
+                </li>
+                <li>
+                    <button>Comprar</button>
+                </li>
             </ul>
-                
+            </div>
+
+            <div class="elemento">
+            <ul>
+                <li>
+                    <strong><label class="Produtos">Pente</label></li></strong>
+                </li>
+                <li>
+                    <img class="ImgEstrutura" src="produto2.jpg" class="Produtos" alt="Pente" width="200px" height="150px">
+                </li>
+                <li>
+                    <label class="Produtos">R$ 34,00</label>
+                </li>
+                <li>
+                    <button class="Produtos">Comprar</button>
+                </li>
+            </ul>
+            </div>
+
+            <div class="elemento">
+                <ul>
+                    <li>
+                        <strong><label class="Produtos">Shampoo</label></li></strong>
+                    </li>
+                    <li>
+                        <img class="ImgEstrutura" src="produto3.jpg" class="Produtos" alt="Shampoo" width="200px" height="150px">
+                    </li>
+                    <li>
+                        <label class="Produtos">R$ 85,00</label>
+                    </li>
+                    <li>
+                        <button class="Produtos">Comprar</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="elemento">
+                <ul>
+                    <li>
+                        <strong class="Produtos"><label>Coleira</label></strong>
+                    </li>
+                    <li>
+                        <img class="ImgEstrutura" src="produto4.jpg" class="Produtos" alt="coleira" width="200px" height="150px">
+                    </li>
+                    <li>
+                        <label class="Produtos">R$ 45,00</label>
+                    </li>
+                    <li>
+                        <button class="Produtos">Comprar</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="elemento">
+                <ul>
+                    <li>
+                        <strong class="Produtos"><label>Brinquedo</label></strong>
+                    </li>
+                    <li>
+                        <img class="ImgEstrutura" src="produto5.jpg" class="Produtos" alt="Brinquedo" width="200px" height="150px">
+                    </li>
+                    <li>
+                        <label class="Produtos">R$ 24,00</label>
+                    </li>
+                    <li>
+                        <button class="Produtos">Comprar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </article>
+
+    <article id = "Serviços" class="Articles">
+        <h3>Serviços</h3>
+        
+        <div class="container">
+
+            <div class="elemento">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <strong><label>Tosa</label></li></strong>
+                        </li>
+                        <li>
+                            <img class="ImgEstrutura" src="Serviço_1.jpg" alt="tosa" width="200px" height="150px">
+                        </li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="elemento">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <strong><label class="Produtos">Banho</label></li></strong>
+                        </li>
+                        <li>
+                            <img class="ImgEstrutura" src="Serviço_2.jpg" class="Produtos" alt="banho" width="200px" height="150px">
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="elemento">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <strong><label class="Produtos">Vacinação</label></li></strong>
+                        </li>
+                        <li>
+                            <img class="ImgEstrutura" src="Serviço_3.jpg" class="Produtos" alt="Vacinação" width="200px" height="150px">
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        
     </article>
 
     <article id="Depoimentos" class="Articles">
+        <h3>Depoimentos</h3>
+
         <ul>
-            <li>FeddBack 1</li>
-            <li>FeddBack 2</li>
-            <li>FeddBack 3</li>
-            <li>FeddBack 4</li>
-            <li>FeddBack 5</li>
+            <div class="Feedback">
+                <li class="elementoF">
+                    <img class="ImgEstrutura" src="Feedback_1.jpg" alt="Feedback_1" height="250px" width="300px">
+                    <h4>Rebeca</h4>
+                    <p>Parabéns pela excelente equipe e pelo cuidado excepcional com nossos animais de estimação. Sempre saímos da petshop com um sorriso no rosto e nossos pets felizes. Obrigado por oferecerem um serviço tão dedicado e carinhoso!</p>
+                </li>
+                <li class="elementoF">
+                    <img class="ImgEstrutura" src="Feedback_2.jpg" alt="Feedback_2" height="250px" width="300px">
+                    <h4>Eduardo e Monica</h4>
+                    <p>Queremos expressar nossa gratidão pela incrível experiência que tivemos na petshop. Desde o atendimento até o cuidado com nossos amados peludos, vocês realmente superaram todas as nossas expectativas.</p>
+                </li>
+
+                <li class="elementoF">
+                    <img class="ImgEstrutura" src="Feedback_3.jpg" alt="Feedback_3" height="250px" width="300px">
+                    <h4>Capitu e Bentinho</h4>
+                    <p>Esses pets são como filhos para nós e graças a esse petshop pudemos ter produtos e serviços para eles como fazemos com nosso filho Ezequiel</p>
+                </li>
+            </div>
         </ul>
     </article>
 
     <article id ="Blog ou Noticias" class="Articles">
         <h3>Noticias</h3>
+        <ul>
+            <div class="Noticias">
+                <li class="elementoN">
+                    <a href="#">
+                        <img class="ImgEstrutura" src="noticia_1.jpg" alt="noticia_1" height="150px" width="200px">
+                        <h5>Pet Weekend: Diverção sem limites</h5>
+                    </a>
+                </li>
+                <li class="elementoN">
+                    <a href="#">
+                        <img class="ImgEstrutura" src="noticia_2.jpg" alt="noticia_2" height="150px" width="200px">
+                        <h5>Parada Pet, chame a familia pet!</h5>
+                    </a>
+                </li>
+                <li class="elementoN">
+                    <a href="#">
+                        <img class="ImgEstrutura" src="noticia_3.jpg" alt="noticia_3" height="150px" width="200px">
+                        <h5>Sabado pet: Feira de adoção</h5>
+                    </a>
+                </li>
+                <li class="elementoN">
+                    <a href="#">
+                        <img class="ImgEstrutura" src="noticia_4.jpg" alt="noticia_4" height="150px" width="200px">
+                        <h5>Patitas Fest</h5>
+                    </a>
+                </li>
+            </div>
+        </ul>
     </article>
 
     <article id = "Formulario" class="Articles">
