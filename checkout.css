@@ -1,0 +1,87 @@
+.containerGrid,.c-R,.c-L{
+    display: grid;
+    /*grid-template-rows: 1fr 2fr;*/
+}
+
+.header,.footer{
+    display: flex;
+    background-color: violet;
+    width: 100%;
+    justify-content: space-between;
+    color: black;
+}
+
+.footer{
+    justify-content: center;
+}
+
+body{
+    background-color: pink;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.annouciment{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: red;
+}
+
+.elements{
+    display: grid;
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductName{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: pink;    
+}
+
+.c-L{
+    width: 60%;
+    background-color: white;
+}
+
+.c-R{
+    font-size: 20px;
+    width: 38%;
+    margin-left: 5px;
+    background-color: white;
+}
+
+.c-R-Inside{
+    margin-left: 15px;
+}
+
+.Product{
+    display: flex;
+}
+
+.c-cpf{
+    margin-top: 5px;
+    background-color: white;
+    width: 100%;
+}

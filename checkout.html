@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body class="containerGrid">
+    
+    <header class="header">
+            <img src="PetshopLogo.png" height="300px" width="150px">
+            <h2>Carrinho de compras</h2>
+    </header>
+
+    <section class="section">
+        <nav class="annouciment">
+            <h3>A cada quatro itens há um disconto de 20%</h3>
+        </nav>
+    
+        <article class="c-L">
+            <h2>Carrinho de compras</h2>
+            <div class="elements">
+                <img src="produto3.jpg" height="200px" width="100px">
+                <label class="ProductName">Produto</label>
+                <div class="quantity">
+                    <button>-</button>
+                    <p>0</p>
+                    <button>+</button>
+                    <p>R$</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="elements">
+                <img src="produto2.jpg" height="200px" width="100px">
+                <label class="ProductName">Produto</label>
+                <div class="quantity">
+                    <button>-</button>
+                    <p>0</p>
+                    <button>+</button>
+                    <p>R$</p>
+                </div>
+            </div>
+            <br>
+        </article>
+    
+        <aside class="c-R">
+            <div class="c-R-Inside">
+                <h3>Total</h3>
+                <h4>Resumo de pedidos</h4>
+                <p>Produto: </p>
+                <p>Valor</p>
+                <br>
+                <p>Produto2: </p>
+                <p>Valor</p>
+                <br>
+                <label>Total:</label>
+                <select id="FormasPagamento">
+                    <option value="1">Pix</option>
+                    <option value="2">Cartão</option>
+                    <option value="3">Boleto</option>
+                </select>
+            </div>
+        </aside>
+    
+        <article class="c-cpf">
+            <label for="cepInput" size = "20px">Digite o CEP: </label>
+            <input type="text" id="cepInput" size = 25px>
+            <button onclick="buscarEndereco()" >Buscar</button>
+            <br>
+            <br>
+            <em><div id="endereco"></div></em>
+            <br>
+            <label>Nome</label>
+            <input type="text" id="nome" name="nome">
+            <label>CPF</label>
+            <input type="text" id="cpf" name="cpf">
+            <input type="submit" value="Enviar">
+            <br>
+            <br>
+        </article>
+
+        <script>
+            function buscarEndereco() {
+                var cep = document.getElementById('cepInput').value;
+                var url = `https://viacep.com.br/ws/${cep}/json/`;
+                
+                fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if(data.erro) {
+                        document.getElementById('endereco').innerText = "CEP não encontrado.";
+                    } else {
+                        var endereco = `CEP: ${data.cep}, ${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}`;
+                        document.getElementById('endereco').innerText = endereco;
+                    }
+                })
+                .catch(error => console.error('Erro:', error));
+            }
+        </script>
+    </section>
+
+    
+
+    <footer class="footer">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
