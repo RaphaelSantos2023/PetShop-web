@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="checkout.css">
+    <script src="Calculo.js"></script>
 </head>
 <body class="containerGrid">
     
@@ -27,7 +28,7 @@
                     <button>-</button>
                     <p>0</p>
                     <button>+</button>
-                    <p>R$</p>
+                    <p>R$ 85.00</p>
                 </div>
             </div>
             <br>
@@ -39,7 +40,7 @@
                     <button>-</button>
                     <p>0</p>
                     <button>+</button>
-                    <p>R$</p>
+                    <p>R$ 34.00</p>
                 </div>
             </div>
             <br>
@@ -49,13 +50,15 @@
             <div class="c-R-Inside">
                 <h3>Total</h3>
                 <h4>Resumo de pedidos</h4>
-                <p>Produto: </p>
-                <p>Valor</p>
+                <p>Produto1: </p>
+                <span>Valor: R$</span><span id="valor1" value="85.00" >85.00</span>
                 <br>
                 <p>Produto2: </p>
-                <p>Valor</p>
+                <span>Valor: R$</span><span id="valor2" value="34.00">34.00</span>
                 <br>
-                <label>Total:</label>
+                <br>
+                <br>
+                <label>Total:</label><p><span id="valorTotal"></span></p>
                 <select id="FormasPagamento">
                     <option value="1">Pix</option>
                     <option value="2">Cartão</option>
